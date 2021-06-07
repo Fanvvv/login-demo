@@ -14,10 +14,10 @@ const routes = []
 // console.log(file,file.keys());
 
 file.keys().map((value) => {
-  console.log(file(value).default);
+  // console.log(file(value).default);
   routes.push(...file(value).default)
 })
-console.log(routes);
+// console.log(routes);
 
 const router = new VueRouter({
   mode: 'history',
